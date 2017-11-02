@@ -1,0 +1,32 @@
+DISH Analysis
+
+Project Goal: To determine whether discounting behavior exists in studying.
+
+Project Need: To create a modifiable database that looks for the indifference point using five methods- double limit, decreasing adjustment, multiple choice, real time, and escape condition.
+
+	The past programs for the DISH project included a database made by Dr. Alam in Microsoft Access, however this database didn't allow for information extraction. 
+>>>Feel free to add to the past programs section, people!
+
+	Each user of the program will enter certain demographics upon his or her first use of the system, such as student number, gender, and age. Each administrator will have to enter an experiment number. Both the students and the administrators of the system will be assigned a password and username. As we understand, all options will essentially ask a student, “Would you rather have x points now or y points later,” with every “x” being less than the “y.” It is also understood that there should be a one to two second delay before the submit button appears after the question is displayed. 
+	Input and output for the double limit, decreasing adjustment, and multiple choice methods will include the minimum and maximum points possible, the delay time in minutes to receive maximum points, and the time in seconds between the presentation of the choices and the presentation of the submit buttons. 
+
+Double Limit
+	This method will ask, “Would you rather have x points now or y points in z minutes?” Each “x” on each succeeding question will be probabilistically selected from a range of values that's narrowed by consistent choices made by the user. The indifference point is calculated by taking the value of adjusting outcome amount after the algorithm is satisfied. In other words, as long as the user consistently chooses “x” or consistently chooses “y,” the algorithm will execute quicker and yield an accurate answer.
+
+	 Additional output for the double limit method includes the number of trials to reach the indifference point, the choice option identified as “1,” the choice made by the user on each trial, the reaction time in seconds for each trial, and the total elapsed time for the task (full algorithm to run).
+
+Decreasing Adjustment
+	 This method will ask, “Would you rather have x points now or y points in z minutes?” The first choice will be between the delayed amount and half the delayed amount. The following adjusting outcomes will be increased or decreased by half the previous adjustment. This algorithm will stop after a specified number of trials. The indifference point will be the adjusting outcome value that would have been presented in the next trial.
+
+	Additional input for this method is the number of trials needed to reach the indifference point, which will be set by the administrator. Additional output will be number of trials needed to reach the indifference point, the choice option identified as “2,” the choice made by each participant on each trial, the reaction time in seconds for each trial, and the total time elapsed for the task.
+
+Multiple Choice
+	This method can be done two ways, one by the user just simply choosing between x points now and y points in z minutes, and the other way is actually having to fulfill the delay if the user chose to the “y points in z minutes,” where the user could get a proportion of points of the amount of time. The indifference point in this method will be the actual choices selected from each question.
+
+	Additional input for this method is the list of possible point/time option as ordered pairs and the points distribution input as a data table. Additional output will be the choice option identified as “3,” the choice made on each choice recorded as an ordered pair, the points distribution used, the reaction time in seconds for each trial, and the total time elapsed for the task.
+
+Real Time
+	In this method, the user would simply start reading until he or she chose to quit. This method will also have an optional ruler visible that will show the user how many points he or she has at the present. The indifference point will be the place the student stops reading in the set-length task.
+
+Escape  Condition
+This method is where the user chooses how long he or she wants to read. The user can fulfill the task, or can escape at any time. The indifference point will be the elapsed time before escaping the task.

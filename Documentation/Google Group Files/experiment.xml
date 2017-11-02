@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<experiment xmlns="http://www.jsu.edu" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.jsu.edu experiment.xsd">
+  <personnel>
+    <investigator>
+      <name> Heidi Dempsey </name>
+      <department> Psychology </department>
+    </investigator>
+    <investigator>
+      <name> David Dempsey </name>
+      <department> Mathematics </department>
+    </investigator>
+    <investigator>
+      <name> Aaron Garrett </name>
+      <department> Computer Science </department>
+    </investigator>
+  </personnel>
+  <title> Discounting in Study Habits Experiment </title>
+  <number> 1 </number>
+  <instructions>
+	All the instructions should go here and will be placed in the interface.
+  </instructions>
+  <methods>
+    <!-- There are 3 different possibilities (right now) for the experiment methods: dl (double limit), da (decreasing adjustment), and mc (multiple choice). -->
+    <!-- Each of these can be placed as many times and in any order that you choose. -->
+    <!-- The time variables (maxTime and responseDelay) have an optional attribute called "units" that can be set to any of the following values: -->
+    <!-- "seconds", "minutes", "hours", "days", "weeks", "months", or "years" -->
+    <!-- The default value is "seconds" if it is left unspecified. -->
+    <da>
+      <rewardType> point </rewardType>
+      <daMinReward> 0.5 </daMinReward>
+      <daMaxReward> 10 </daMaxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay> 1 </responseDelay>
+      <numTrials> 5 </numTrials>
+	  <daInstructions> Choose one option </daInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <doubleDelay> 0 </doubleDelay>
+	  <intertrialInterval> 0 </intertrialInterval>
+    </da>
+	
+    <dl>
+      <rewardType> vacation </rewardType>
+      <dlMinReward> 0.5 </dlMinReward>
+      <dlMaxReward> 10 </dlMaxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 0 </responseDelay>
+	  <dlInstructions> Choose one option </dlInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <doubleDelay> 0 </doubleDelay>
+	  <intertrialInterval> 0 </intertrialInterval>
+	</dl>
+    <mc>
+      <rewardType> dollar </rewardType>
+      <mcMinReward> 0.5 </mcMinReward>
+      <mcMaxReward> 10 </mcMaxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 1 </responseDelay>
+	  <distribution> Exponential </distribution>
+      <scenario>
+        <option>
+          <reward> 0.01 </reward>
+          <time> 0 </time>
+        </option>
+        <option>
+          <reward> 0.5 </reward>
+          <time units="seconds"> 30 </time>
+        </option>
+        <option>
+          <reward> 1 </reward>
+          <time> 60 </time>
+        </option>
+      </scenario>
+	  <mcInstructions> Choose one option </mcInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <timeUnits> 0 </timeUnits>
+	  <choiceList> apples </choiceList>
+	  <intertrialInterval> 0 </intertrialInterval>
+    </mc>
+    <mc>
+      <rewardType> ice cream </rewardType>
+      <mcMinReward> 1 </mcMinReward>
+      <mcMaxReward> 15 </mcMaxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 2 </responseDelay>
+      <distribution> Logarithmic </distribution>
+      <scenario>
+        <option>
+          <reward> 0.1 </reward>
+          <time> 0 </time>
+        </option>
+        <option>
+          <reward> 0.25 </reward>
+          <time units="seconds"> 10 </time>
+        </option>
+        <option>
+          <reward> 1 </reward>
+          <time> 30 </time>
+        </option>
+      </scenario>
+	  <mcInstructions> Choose one option </mcInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <timeUnits> 0 </timeUnits>
+	  <choiceList> apples </choiceList>
+	  <intertrialInterval> 0 </intertrialInterval>
+    </mc>
+  </methods>
+  <conclusion>
+	Final concluding remarks will go here and will be displayed at the end of the experiment.
+  </conclusion>
+</experiment>

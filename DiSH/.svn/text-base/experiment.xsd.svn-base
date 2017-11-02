@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns="http://www.jsu.edu" 
+		   targetNamespace="http://www.jsu.edu" 
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		   elementFormDefault="qualified">
+
+
+<xs:element name="da">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="rewardType" type="xs:string"/>
+			<xs:element name="precision" type="xs:decimal"/>
+			<xs:element name="minReward" type="xs:decimal"/>
+			<xs:element name="maxReward" type="xs:decimal"/>
+			<xs:element name="maxTime" type="timeType"/>
+			<xs:element name="responseDelay" type="timeType"/>
+			<xs:element name="numTrials" type="xs:integer"/>
+			<xs:element name="daInstructions" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="soonerTime" type="timeType"/>
+			<xs:element name="laterTime" type="timeType"/>
+			<xs:element name="doubleDelay" type="timeType"/>
+			<xs:element name="intertrialInterval" type="timeType"/>
+			<xs:element name="question" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>					
+</xs:element>
+
+<xs:element name="dl">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="rewardType" type="xs:string"/>
+			<xs:element name="minReward" type="xs:decimal"/>
+			<xs:element name="maxReward" type="xs:decimal"/>
+			<xs:element name="maxTime" type="timeType"/>
+			<xs:element name="responseDelay" type="timeType"/>
+			<xs:element name="dlInstructions" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="soonerTime" type="timeType"/>
+			<xs:element name="laterTime" type="timeType"/>
+			<xs:element name="doubleDelay" type="timeType"/>
+			<xs:element name="intertrialInterval" type="timeType"/>
+			<xs:element name="question" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>					
+</xs:element>
+
+<xs:element name="experiment">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="personnel"/>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="number" type="xs:integer" default="1"/>
+			<xs:element name="instructions" type="xs:string"/>
+			<xs:element ref="methods"/>
+			<xs:element name="conclusion" type="xs:string"/>
+		</xs:sequence>			
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="investigator">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="department" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="mc">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="rewardType" type="xs:string"/>
+			<xs:element name="minReward" type="xs:decimal"/>
+			<xs:element name="maxReward" type="xs:decimal"/>
+			<xs:element name="maxTime" type="timeType"/>
+			<xs:element name="responseDelay" type="timeType"/>
+			<xs:element name="distribution" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="scenario" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="mcInstructions" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="soonerTime" type="timeType"/>
+			<xs:element name="laterTime" type="timeType"/>
+			<xs:element name="timeUnits" type="timeType"/>
+			<xs:element name="choiceList" type="xs:string"/>
+			<xs:element name="intertrialInterval" type="timeType"/>
+			<xs:element name="question" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>					
+</xs:element>
+
+<xs:element name="rt">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="fileName" type="xs:string"/>
+			<xs:element name="showRuler" type="xs:boolean"/>
+			<xs:element name="tickMark1" type="xs:decimal"/>
+			<xs:element name="tickMark2" type="xs:decimal"/>
+			<xs:element name="tickMark3" type="xs:decimal"/>
+			<xs:element name="tickMark4" type="xs:decimal"/>
+			<xs:element name="tickMark5" type="xs:decimal"/>
+			<xs:element name="tickMark6" type="xs:decimal"/>
+			<xs:element name="tickMark7" type="xs:decimal"/>
+			<xs:element name="tickMark8" type="xs:decimal"/>
+			<xs:element name="tickMark9" type="xs:decimal"/>
+			<xs:element name="tickMark10" type="xs:decimal"/>
+			<xs:element name="rewardType" type="xs:string"/>
+			<xs:element name="minReward" type="xs:decimal"/>
+			<xs:element name="maxReward" type="xs:decimal"/>
+			<xs:element name="maxTime" type="timeType"/>
+			<xs:element name="responseDelay" type="timeType"/>
+			<xs:element name="distribution" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="scenario" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="rtInstructions" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="soonerTime" type="timeType"/>
+			<xs:element name="laterTime" type="timeType"/>
+			<xs:element name="timeUnits" type="timeType"/>
+			<xs:element name="choiceList" type="xs:string"/>
+			<xs:element name="intertrialInterval" type="timeType"/>
+			<xs:element name="question" type="xs:string"/>
+			<xs:element name="maxReadingTime" type="timeType"/>
+		</xs:all>
+	</xs:complexType>					
+</xs:element> 
+
+<xs:element name="methods">
+	<xs:complexType>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="da" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="dl" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="mc" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="rt" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="option">
+	<xs:complexType>
+		<xs:all>
+			<xs:element name="reward" type="xs:decimal"/>
+			<xs:element name="time" type="timeType"/>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="personnel">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="investigator" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="scenario">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="option" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>					
+</xs:element>
+
+<xs:complexType name="timeType">
+	<xs:simpleContent>
+		<xs:extension base="xs:decimal">
+			<xs:attribute name="units" type="timeUnits" />
+		</xs:extension>
+	</xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="timeUnits">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="seconds"/>
+		<xs:enumeration value="minutes"/>
+		<xs:enumeration value="hours"/>
+		<xs:enumeration value="days"/>
+		<xs:enumeration value="weeks"/>
+		<xs:enumeration value="months"/>
+		<xs:enumeration value="years"/>
+	</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

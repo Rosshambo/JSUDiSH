@@ -1,0 +1,73 @@
+<project name="dish" default="dist" basedir=".">
+	<description>
+		Build file for Discounting Experiment
+	</description>
+	
+	<!-- set global properties for this build -->
+	<property name="src"     location="src"/>
+	<property name="lib"     location="lib"/>
+	<property name="build"   location="build"/>
+	<property name="dist"    location="dist"/>
+	<property name="jarname" value="dish.jar"/>
+
+<!-- ==================================================================== 
+                                                       Initialize the build
+      ==================================================================== -->
+	<target name="init" depends="clean">
+		<mkdir dir="${build}"/>
+	</target>
+
+<!-- ==================================================================== 
+                                               Compile the source files
+	==================================================================== -->
+	<target name="compile" depends="init" description="compile the source">
+		<javac srcdir="${src}" classpath="${dist};${build};lib/miglayout-3.6.3.jar;.;lib/mysql-connector-java-5.1.7-bin.jar;lib/cgjsapi.jar;lib/cgjsapi163.dll;lib/TestAudioListener.class;lib/TestEngineListener.class;lib/studypal.jar" destdir="${build}"/>
+	</target>
+
+<!-- ==================================================================== 
+                                                  Create the distribution
+      ==================================================================== -->
+	<target name="dist" depends="compile" description="generate the distribution" >
+		<mkdir dir="${dist}"/>
+		<jar destfile="${dist}/${jarname}" basedir="${build}">
+			<manifest>
+				<attribute name="Built-By" value="JSU DiSH Project"/>
+				<attribute name="Main-Class" value="edu.jsu.dish.Main"/>
+				<attribute name="Class-Path" value=". miglayout-3.6.3.jar mysql-connector-java-5.1.7-bin.jar cgjsapi.jar cgjsapi163.dll TestAudioListener.class TestEngineListener.class studypal.jar"/>
+			</manifest>
+		</jar>
+		<copy file="lib/miglayout-3.6.3.jar" todir="${dist}"/>
+		<copy file="lib/mysql-connector-java-5.1.7-bin.jar" todir="${dist}"/>
+		<copy file="experiment.xsd" todir="${dist}"/>
+		<copy file="lib/cgjsapi.jar" todir="${dist}"/>
+		<copy file="lib/cgjsapi163.dll" todir="${dist}"/>
+		<copy file="lib/JacksonvilleState.png" todir="${dist}"/>
+		<copy file="lib/studypal.jar" todir="${dist}"/>
+		<copy file="lib/README.txt" todir="${dist}"/>
+		<copy file="lib/dbconfig.ini" todir="${dist}"/>
+
+	</target>
+
+	
+<!-- ==================================================================== 
+                                                    Cleans the project
+      ==================================================================== -->
+	<target name="clean" description="clean up">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+	
+	
+<!-- ==================================================================== 
+                                            Creates a backup of all source files 
+      ==================================================================== -->
+	<target name="backup" description="back up source">
+		<tstamp>
+			<format property="TODAY" pattern="yyyyMMdd-HHmm"/>
+		</tstamp>
+		<zip destfile="versions/discounting_backup-${TODAY}.zip" basedir="${src}"/>	
+	</target>
+	
+	
+</project>
+

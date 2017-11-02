@@ -1,0 +1,17 @@
+Modifying/Creating an Expriment
+
+To create or change an experiment, an experimenter or administrator must change the xml file.  To do this, simply navigate to the folder where the DiSH experiment is located.  Once the xml file is located, click on it once to highlight it.  Next, right-click it and select "Edit" from the right-click menu.  Once the xml file is opened, make any changes you deem neccessary to change the experiment.  A new experiment is now ready to be loaded.
+
+To change the number of times a method occurs
+
+To change the number of times the decreasing adjustment method occurs in the experiment, simply change the "numTrials" tag's value.  For example, to change the number of trials from three to 5, 
+<numTrials> 3 </numTrials> would be changed to <numTrials> 5 </numTrials>.
+
+To change the number of multiple choice questions, copy from one "mc" tag the next "\mc" tag and paste it right after the previous "\mc" tag.  
+
+It should be noted that the number of times the double limit method can occur is only controlled by the participant.
+
+To change the reward type
+
+To change the reward type, simply change the "rewardType" tag's value.  This can be done for any method. For example, to change the double limit's reward type from apples to doughnuts, 
+<rewardType> apples </rewardType> would be changed to <rewardType> doughnuts </rewardType>.

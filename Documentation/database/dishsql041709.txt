@@ -1,0 +1,194 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Apr 17, 2009 at 08:17 PM
+-- Server version: 5.0.21
+-- PHP Version: 5.1.4
+-- 
+-- Database: `dish`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `experiment-method`
+-- 
+
+CREATE TABLE `experiment-method` (
+  `id` int(11) NOT NULL auto_increment,
+  `eid` int(11) NOT NULL,
+  `mid` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `experiment-method`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `experiment`
+-- 
+
+CREATE TABLE `experiment` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(512) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `experiment`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `investigator-experiment`
+-- 
+
+CREATE TABLE `investigator-experiment` (
+  `id` int(11) NOT NULL auto_increment,
+  `iid` int(11) NOT NULL,
+  `eid` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `investigator-experiment`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `investigator`
+-- 
+
+CREATE TABLE `investigator` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` text collate latin1_general_ci NOT NULL,
+  `password` text collate latin1_general_ci NOT NULL,
+  `first_name` text collate latin1_general_ci NOT NULL,
+  `last_name` text collate latin1_general_ci NOT NULL,
+  `department` text collate latin1_general_ci NOT NULL,
+  `privilege` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
+
+-- 
+-- Dumping data for table `investigator`
+-- 
+
+INSERT INTO `investigator` VALUES (2, 'loganmoore', 'fundop', 'Logan', 'Moore', 'mcis', 2);
+INSERT INTO `investigator` VALUES (6, 'madams', 'mary', 'Mary', 'Adams', 'mcis', 1);
+INSERT INTO `investigator` VALUES (5, 'cyork', 'roark', 'Carol', 'York', 'boot', 1);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `method`
+-- 
+
+CREATE TABLE `method` (
+  `id` int(11) NOT NULL auto_increment,
+  `question` varchar(256) collate latin1_general_ci default NULL,
+  `reward_type` varchar(64) collate latin1_general_ci NOT NULL,
+  `min_reward` decimal(10,5) NOT NULL,
+  `max_reward` decimal(10,5) NOT NULL,
+  `later_time_value` decimal(10,5) NOT NULL,
+  `later_time_units` int(11) NOT NULL,
+  `intertrial_interval` decimal(10,5) NOT NULL,
+  `type` int(11) NOT NULL,
+  `use_double_delay` tinyint(1) default NULL,
+  `sooner_time_value` decimal(10,5) default NULL,
+  `sooner_time_units` int(11) default NULL,
+  `response_delay` decimal(10,5) default NULL,
+  `distribution_type` varchar(256) collate latin1_general_ci default NULL,
+  `escape_enabled` tinyint(1) default NULL,
+  `progress_ruler_enabled` tinyint(1) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `method`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `participant-method`
+-- 
+
+CREATE TABLE `participant-method` (
+  `id` int(11) NOT NULL auto_increment,
+  `total_time_elapsed` decimal(10,5) NOT NULL,
+  `indifference_value` decimal(10,5) NOT NULL,
+  `indifference_time` decimal(10,5) default NULL,
+  `num_scenarios` int(11) default NULL,
+  `num_words_read` int(11) default NULL,
+  `num_times_reading_paused` int(11) default NULL,
+  `num_words_skipped` int(11) default NULL,
+  `mid` int(11) NOT NULL,
+  `pid` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `participant-method`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `participant`
+-- 
+
+CREATE TABLE `participant` (
+  `id` int(11) NOT NULL auto_increment,
+  `first_name` varchar(32) collate latin1_general_ci NOT NULL,
+  `last_name` varchar(64) collate latin1_general_ci NOT NULL,
+  `age` int(11) NOT NULL,
+  `gender` int(11) NOT NULL,
+  `race` int(11) NOT NULL,
+  `class_rank` int(11) NOT NULL,
+  `participant_number` int(11) NOT NULL,
+  `participating_course` varchar(128) collate latin1_general_ci NOT NULL,
+  `date_time_start` datetime NOT NULL,
+  `date_time_end` datetime NOT NULL,
+  `eid` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `participant`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `querylibrary`
+-- 
+
+CREATE TABLE `querylibrary` (
+  `id` int(11) NOT NULL auto_increment,
+  `queryname` text collate latin1_general_ci NOT NULL,
+  `querycode` text collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=5 ;
+
+-- 
+-- Dumping data for table `querylibrary`
+-- 
+
+INSERT INTO `querylibrary` VALUES (1, 'blah', 'SELECT Age,Race,Gender,FROM participant WHERE Race = @Black or African American@');
+INSERT INTO `querylibrary` VALUES (2, 'mary', 'SELECT Age,Gender,Race,FROM participant WHERE Race = `Black or African American`');
+INSERT INTO `querylibrary` VALUES (3, 'ssssssssss', 'SELECT Age,Gender,Race,FROM participant WHERE Race = @Asian or Pacific Islander@');
+INSERT INTO `querylibrary` VALUES (4, 'Participant', 'SELECT * FROM participant');

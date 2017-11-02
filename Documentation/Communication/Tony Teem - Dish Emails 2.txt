@@ -1,0 +1,936 @@
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Monday, April 20, 2009 10:58 AM
+To:	Evilsax@gmail.com
+Subject:	Re: Chat with Evilsax@gmail.com
+
+lol yea i had to put the db thingy into my c drive but thanks anyway
+
+On Mon, Apr 20, 2009 at 9:58 AM, Evilsax@gmail.com <Evilsax@gmail.com>wrote:
+
+>
+> These messages were sent while you were offline.
+>
+> 9:58 AM evilsax: no, their website is up
+>
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Tuesday, April 21, 2009 2:59 PM
+To:	evilsax@gmail.com
+Subject:	admin tab
+
+am i supposed to be able to use the admin tab on the system? i tried but
+cant...i'm just tryin to get the db screenshots for the user manual
+Jaleesa
+From:	aaron.lee.garrett@gmail.com on behalf of Aaron Garrett [agarrett@jsu.edu]
+Sent:	Wednesday, April 22, 2009 1:27 PM
+To:	Tony Teem
+Subject:	Re: DiSH
+
+Removed.
+
+
+Aaron Garrett, Ph.D.
+Assistant Professor
+Computer Science
+Jacksonville State University
+Jacksonville, AL  36265
+agarrett@jsu.edu
+256-782-5364
+http://mcis.jsu.edu/faculty/agarrett
+
+
+On Wed, Apr 22, 2009 at 12:38 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> The precision issue has been handled (by me). I'm just concatenating a 0 to
+> "#0." to make the new DecimalFormat. What I need to know is if there are
+> trailing zero(s) should they be shown for consistency? or removed because it
+> looks funky?
+> Tony
+>
+>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 12:38 PM
+To:	Aaron Garrett
+Subject:	DiSH
+
+The precision issue has been handled (by me). I'm just concatenating a 0 to
+"#0." to make the new DecimalFormat. What I need to know is if there are
+trailing zero(s) should they be shown for consistency? or removed because it
+looks funky?
+Tony
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Wednesday, April 22, 2009 12:34 PM
+To:	Tony Teem
+Subject:	Re: Precision Question
+
+lol well alrighty then...i knew u could tony the genius lol
+
+On Wed, Apr 22, 2009 at 12:33 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> i know, but how far out will they go? there has to be a limit... well, I
+> guess there doesn't. Ok, i'm a genius, I fixed it so it can be any number,
+> at all.
+>
+>
+> On Wed, Apr 22, 2009 at 12:29 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+>
+>> only in double limit...and the dempsey want to set it to whatever they
+>> want, jus as with reward type
+>>
+>>
+>> On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> Which methods are supposed to be able to set the precision? Is it just
+>>> DA? I know mc won't need it, and of course real time. How about DL? and how
+>>> high can the precision go? Here's how I've coded it
+>>> 1 = 10.1
+>>> 2 = 10.12
+>>> 3 = 10.123
+>>> 4 = 10.1234
+>>> 5 = 10.12345
+>>> and the default is just 10.123 (of course, these won't show if they are
+>>> zero, only if they are a number).
+>>>
+>>> Tony
+>>>
+>>
+>>
+>
+
+
+-- 
+Jaleesa M. Elston
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 12:33 PM
+To:	Jaleesa Elston
+Subject:	Re: Precision Question
+
+i know, but how far out will they go? there has to be a limit... well, I
+guess there doesn't. Ok, i'm a genius, I fixed it so it can be any number,
+at all.
+
+On Wed, Apr 22, 2009 at 12:29 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+
+> only in double limit...and the dempsey want to set it to whatever they
+> want, jus as with reward type
+>
+>
+> On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> Which methods are supposed to be able to set the precision? Is it just DA?
+>> I know mc won't need it, and of course real time. How about DL? and how high
+>> can the precision go? Here's how I've coded it
+>> 1 = 10.1
+>> 2 = 10.12
+>> 3 = 10.123
+>> 4 = 10.1234
+>> 5 = 10.12345
+>> and the default is just 10.123 (of course, these won't show if they are
+>> zero, only if they are a number).
+>>
+>> Tony
+>>
+>
+>
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Wednesday, April 22, 2009 12:30 PM
+To:	Tony Teem
+Subject:	Re: Precision Question
+
+only in double limit...and the dempsey want to set it to whatever they want,
+jus as with reward type
+
+On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> Which methods are supposed to be able to set the precision? Is it just DA?
+> I know mc won't need it, and of course real time. How about DL? and how high
+> can the precision go? Here's how I've coded it
+> 1 = 10.1
+> 2 = 10.12
+> 3 = 10.123
+> 4 = 10.1234
+> 5 = 10.12345
+> and the default is just 10.123 (of course, these won't show if they are
+> zero, only if they are a number).
+>
+> Tony
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 12:28 PM
+To:	Jaleesa Elston; Lori Liles; Logan Moore; Tonya Burton
+Subject:	Precision Question
+
+Which methods are supposed to be able to set the precision? Is it just DA? I
+know mc won't need it, and of course real time. How about DL? and how high
+can the precision go? Here's how I've coded it
+1 = 10.1
+2 = 10.12
+3 = 10.123
+4 = 10.1234
+5 = 10.12345
+and the default is just 10.123 (of course, these won't show if they are
+zero, only if they are a number).
+
+Tony
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Tuesday, April 21, 2009 11:37 PM
+To:	Logan Moore
+Subject:	Re: Admin Window
+
+That may not be the correct place, but it is somewhere in that neighborhood
+according to the error.
+
+On Tue, Apr 21, 2009 at 10:09 PM, Logan Moore <loganjmoore@gmail.com> wrote:
+
+> hmm its been working fine for me, I will try and take a look at it soon.
+>
+>
+> On Tue, Apr 21, 2009 at 7:15 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> There is an error in the database.java file under the getSelectedQuery
+>> method... it's trying to parse a string using index of -1... somewhere....
+>>
+>>
+>> On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>
+>>> Apparently some type of bug, when you log in as administrator and try
+>>> clicking on the Administration tab it will not load?
+>>>
+>>> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>
+>>>> is the admin menu option not working on purpose? or have I discovered
+>>>> some kind of bug?
+>>>
+>>>
+>>>
+>>
+>
+From:	Logan Moore [loganjmoore@gmail.com]
+Sent:	Tuesday, April 21, 2009 10:10 PM
+To:	Tony Teem
+Subject:	Re: Admin Window
+
+hmm its been working fine for me, I will try and take a look at it soon.
+
+On Tue, Apr 21, 2009 at 7:15 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> There is an error in the database.java file under the getSelectedQuery
+> method... it's trying to parse a string using index of -1... somewhere....
+>
+>
+> On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>
+>> Apparently some type of bug, when you log in as administrator and try
+>> clicking on the Administration tab it will not load?
+>>
+>> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> is the admin menu option not working on purpose? or have I discovered
+>>> some kind of bug?
+>>
+>>
+>>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Tuesday, April 21, 2009 7:15 PM
+To:	Logan Moore
+Subject:	Re: Admin Window
+
+There is an error in the database.java file under the getSelectedQuery
+method... it's trying to parse a string using index of -1... somewhere....
+
+On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com> wrote:
+
+> Apparently some type of bug, when you log in as administrator and try
+> clicking on the Administration tab it will not load?
+>
+> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> is the admin menu option not working on purpose? or have I discovered some
+>> kind of bug?
+>
+>
+>
+From:	Logan Moore [loganjmoore@gmail.com]
+Sent:	Tuesday, April 21, 2009 6:41 PM
+To:	Tony Teem
+Subject:	Re: Admin Window
+
+Apparently some type of bug, when you log in as administrator and try
+clicking on the Administration tab it will not load?
+
+On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> is the admin menu option not working on purpose? or have I discovered some
+> kind of bug?
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Tuesday, April 21, 2009 6:29 PM
+To:	Lori Liles
+Subject:	Re: Admin Window
+
+It is throwing an error from the database.java file. something about -1
+being an invalid string index... whatever that means.
+
+On Tue, Apr 21, 2009 at 6:22 PM, Lori Liles <lileslori@gmail.com> wrote:
+
+> it should be working....
+>
+>
+> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> is the admin menu option not working on purpose? or have I discovered some
+>> kind of bug?
+>
+>
+>
+From:	Lori Liles [lileslori@gmail.com]
+Sent:	Tuesday, April 21, 2009 6:23 PM
+To:	Tony Teem
+Subject:	Re: Admin Window
+
+it should be working....
+
+On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> is the admin menu option not working on purpose? or have I discovered some
+> kind of bug?
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Tuesday, April 21, 2009 6:10 PM
+To:	Lori Liles; Logan Moore
+Subject:	Admin Window
+
+is the admin menu option not working on purpose? or have I discovered some
+kind of bug?
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Tuesday, April 21, 2009 6:08 PM
+To:	Jaleesa Elston
+Subject:	Re: admin tab
+
+It's not working, It's possible the button has been shut down until that
+section can be finished. No use in putting it in the manual if it's never
+going to be used in its current version.
+
+On Tue, Apr 21, 2009 at 2:59 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+
+> am i supposed to be able to use the admin tab on the system? i tried but
+> cant...i'm just tryin to get the db screenshots for the user manual
+> Jaleesa
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 2:06 PM
+To:	Logan Moore
+Subject:	Re: Admin Window
+
+I found a bug. You are pulling the wrong data for the realTime class.
+Everything you need to pull is actually located in the RealTime method,
+instead of using any of the inherited methods. So for all the real time
+information you should be using:
+rttemp.getMinReward()
+
+etc.
+
+If there is anything missing from the realTime.java class please let me know
+and I can add it to pull from the inherited methods. As it stands now you
+are putting strange stuff into the database for RealTime.. which is fine
+because we will need it later, but I know for sure you are pulling the wrong
+"indifference point" it needs to be pulled directly from the realtime method
+like this..
+
+rttemp.getTotalPoints()
+
+and for the max points it would be
+
+rttemp.getMaxPoints()
+
+see what I mean?
+
+On Tue, Apr 21, 2009 at 11:37 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> That may not be the correct place, but it is somewhere in that neighborhood
+> according to the error.
+>
+>
+> On Tue, Apr 21, 2009 at 10:09 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>
+>> hmm its been working fine for me, I will try and take a look at it soon.
+>>
+>>
+>> On Tue, Apr 21, 2009 at 7:15 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> There is an error in the database.java file under the getSelectedQuery
+>>> method... it's trying to parse a string using index of -1... somewhere....
+>>>
+>>>
+>>> On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>>
+>>>> Apparently some type of bug, when you log in as administrator and try
+>>>> clicking on the Administration tab it will not load?
+>>>>
+>>>> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>>
+>>>>> is the admin menu option not working on purpose? or have I discovered
+>>>>> some kind of bug?
+>>>>
+>>>>
+>>>>
+>>>
+>>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 2:02 PM
+To:	Aaron Garrett
+Subject:	Re: DiSH
+
+New bug:  The real time insertion into the database is totally incorrect.
+He's pulling the wrong data from the method. I won't have time to fix
+this... but i'll work on it next week.
+
+On Wed, Apr 22, 2009 at 1:32 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> K, cross it off your list then. it's doing the work in the toString() so
+> there will not be any rounding errors.
+> Participant info validation up next.
+>
+>
+> On Wed, Apr 22, 2009 at 1:26 PM, Aaron Garrett <agarrett@jsu.edu> wrote:
+>
+>> Removed.
+>>
+>>
+>> Aaron Garrett, Ph.D.
+>> Assistant Professor
+>> Computer Science
+>> Jacksonville State University
+>> Jacksonville, AL  36265
+>> agarrett@jsu.edu
+>> 256-782-5364
+>> http://mcis.jsu.edu/faculty/agarrett
+>>
+>>
+>>
+>> On Wed, Apr 22, 2009 at 12:38 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> The precision issue has been handled (by me). I'm just concatenating a 0
+>>> to "#0." to make the new DecimalFormat. What I need to know is if there are
+>>> trailing zero(s) should they be shown for consistency? or removed because it
+>>> looks funky?
+>>> Tony
+>>>
+>>>
+>>>
+>>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 1:32 PM
+To:	Aaron Garrett
+Subject:	Re: DiSH
+
+K, cross it off your list then. it's doing the work in the toString() so
+there will not be any rounding errors.
+Participant info validation up next.
+
+On Wed, Apr 22, 2009 at 1:26 PM, Aaron Garrett <agarrett@jsu.edu> wrote:
+
+> Removed.
+>
+>
+> Aaron Garrett, Ph.D.
+> Assistant Professor
+> Computer Science
+> Jacksonville State University
+> Jacksonville, AL  36265
+> agarrett@jsu.edu
+> 256-782-5364
+> http://mcis.jsu.edu/faculty/agarrett
+>
+>
+>
+> On Wed, Apr 22, 2009 at 12:38 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> The precision issue has been handled (by me). I'm just concatenating a 0
+>> to "#0." to make the new DecimalFormat. What I need to know is if there are
+>> trailing zero(s) should they be shown for consistency? or removed because it
+>> looks funky?
+>> Tony
+>>
+>>
+>>
+>
+From:	Lori Liles [lileslori@gmail.com]
+Sent:	Wednesday, April 22, 2009 5:08 PM
+To:	Tony Teem
+Subject:	Re: Precision Question
+
+I guess that's fine.  I have no clue which ones are supposed to have them.
+ I guess just go with DA and DL.  I believe it's DL that gets pretty long.
+
+On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> Which methods are supposed to be able to set the precision? Is it just DA?
+> I know mc won't need it, and of course real time. How about DL? and how high
+> can the precision go? Here's how I've coded it
+> 1 = 10.1
+> 2 = 10.12
+> 3 = 10.123
+> 4 = 10.1234
+> 5 = 10.12345
+> and the default is just 10.123 (of course, these won't show if they are
+> zero, only if they are a number).
+>
+> Tony
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 6:07 PM
+To:	Lori Liles
+Subject:	Re: Precision Question
+
+Oh, it's just DA according to Dr. Garrett. and it's been done.
+
+On Wed, Apr 22, 2009 at 5:07 PM, Lori Liles <lileslori@gmail.com> wrote:
+
+> I guess that's fine.  I have no clue which ones are supposed to have them.
+>  I guess just go with DA and DL.  I believe it's DL that gets pretty long.
+>
+> On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> Which methods are supposed to be able to set the precision? Is it just DA?
+>> I know mc won't need it, and of course real time. How about DL? and how high
+>> can the precision go? Here's how I've coded it
+>> 1 = 10.1
+>> 2 = 10.12
+>> 3 = 10.123
+>> 4 = 10.1234
+>> 5 = 10.12345
+>> and the default is just 10.123 (of course, these won't show if they are
+>> zero, only if they are a number).
+>>
+>> Tony
+>>
+>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Wednesday, April 22, 2009 6:08 PM
+To:	Lori Liles
+Subject:	Re: Precision Question
+
+Turned out I couldn't use a switch statement if I wanted it to be open ended
+so I just concatenated a string with what I needed and used that string in
+the DecimalFormat.
+
+On Wed, Apr 22, 2009 at 6:07 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> Oh, it's just DA according to Dr. Garrett. and it's been done.
+>
+>
+> On Wed, Apr 22, 2009 at 5:07 PM, Lori Liles <lileslori@gmail.com> wrote:
+>
+>> I guess that's fine.  I have no clue which ones are supposed to have them.
+>>  I guess just go with DA and DL.  I believe it's DL that gets pretty long.
+>>
+>> On Wed, Apr 22, 2009 at 12:28 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> Which methods are supposed to be able to set the precision? Is it just
+>>> DA? I know mc won't need it, and of course real time. How about DL? and how
+>>> high can the precision go? Here's how I've coded it
+>>> 1 = 10.1
+>>> 2 = 10.12
+>>> 3 = 10.123
+>>> 4 = 10.1234
+>>> 5 = 10.12345
+>>> and the default is just 10.123 (of course, these won't show if they are
+>>> zero, only if they are a number).
+>>>
+>>> Tony
+>>>
+>>
+>>
+>
+From:	aaron.lee.garrett@gmail.com on behalf of Aaron Garrett [agarrett@jsu.edu]
+Sent:	Wednesday, April 22, 2009 6:29 PM
+To:	Tony Teem
+Subject:	Re: DiSH
+
+I'll put it on the board.
+
+
+Aaron Garrett, Ph.D.
+Assistant Professor
+Computer Science
+Jacksonville State University
+Jacksonville, AL  36265
+agarrett@jsu.edu
+256-782-5364
+http://mcis.jsu.edu/faculty/agarrett
+
+
+On Wed, Apr 22, 2009 at 2:02 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> New bug:  The real time insertion into the database is totally incorrect.
+> He's pulling the wrong data from the method. I won't have time to fix
+> this... but i'll work on it next week.
+>
+>
+> On Wed, Apr 22, 2009 at 1:32 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> K, cross it off your list then. it's doing the work in the toString() so
+>> there will not be any rounding errors.
+>> Participant info validation up next.
+>>
+>>
+>> On Wed, Apr 22, 2009 at 1:26 PM, Aaron Garrett <agarrett@jsu.edu> wrote:
+>>
+>>> Removed.
+>>>
+>>>
+>>> Aaron Garrett, Ph.D.
+>>> Assistant Professor
+>>> Computer Science
+>>> Jacksonville State University
+>>> Jacksonville, AL  36265
+>>> agarrett@jsu.edu
+>>> 256-782-5364
+>>> http://mcis.jsu.edu/faculty/agarrett
+>>>
+>>>
+>>>
+>>> On Wed, Apr 22, 2009 at 12:38 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>
+>>>> The precision issue has been handled (by me). I'm just concatenating a 0
+>>>> to "#0." to make the new DecimalFormat. What I need to know is if there are
+>>>> trailing zero(s) should they be shown for consistency? or removed because it
+>>>> looks funky?
+>>>> Tony
+>>>>
+>>>>
+>>>>
+>>>
+>>
+>
+From:	Logan Moore [loganjmoore@gmail.com]
+Sent:	Wednesday, April 22, 2009 10:05 PM
+To:	Tony Teem
+Subject:	Re: Admin Window
+
+Yeah man I will get all of this finished up tomorrow after the final, if
+that is ok?
+
+On Wed, Apr 22, 2009 at 2:06 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> I found a bug. You are pulling the wrong data for the realTime class.
+> Everything you need to pull is actually located in the RealTime method,
+> instead of using any of the inherited methods. So for all the real time
+> information you should be using:
+> rttemp.getMinReward()
+>
+> etc.
+>
+> If there is anything missing from the realTime.java class please let me
+> know and I can add it to pull from the inherited methods. As it stands now
+> you are putting strange stuff into the database for RealTime.. which is fine
+> because we will need it later, but I know for sure you are pulling the wrong
+> "indifference point" it needs to be pulled directly from the realtime method
+> like this..
+>
+> rttemp.getTotalPoints()
+>
+> and for the max points it would be
+>
+> rttemp.getMaxPoints()
+>
+> see what I mean?
+>
+>
+> On Tue, Apr 21, 2009 at 11:37 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> That may not be the correct place, but it is somewhere in that
+>> neighborhood according to the error.
+>>
+>>
+>> On Tue, Apr 21, 2009 at 10:09 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>
+>>> hmm its been working fine for me, I will try and take a look at it soon.
+>>>
+>>>
+>>> On Tue, Apr 21, 2009 at 7:15 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>
+>>>> There is an error in the database.java file under the getSelectedQuery
+>>>> method... it's trying to parse a string using index of -1... somewhere....
+>>>>
+>>>>
+>>>> On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>>>
+>>>>> Apparently some type of bug, when you log in as administrator and try
+>>>>> clicking on the Administration tab it will not load?
+>>>>>
+>>>>> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>>>
+>>>>>> is the admin menu option not working on purpose? or have I discovered
+>>>>>> some kind of bug?
+>>>>>
+>>>>>
+>>>>>
+>>>>
+>>>
+>>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Thursday, April 23, 2009 12:13 AM
+To:	Logan Moore
+Subject:	Re: Admin Window
+
+yeah, that's fine, don't make it a priority, but if you have extra time that
+would be great!
+Still waiting on the final stuff from everyone else.
+
+On Wed, Apr 22, 2009 at 10:04 PM, Logan Moore <loganjmoore@gmail.com> wrote:
+
+> Yeah man I will get all of this finished up tomorrow after the final, if
+> that is ok?
+>
+>
+> On Wed, Apr 22, 2009 at 2:06 PM, Tony Teem <evilsax@gmail.com> wrote:
+>
+>> I found a bug. You are pulling the wrong data for the realTime class.
+>> Everything you need to pull is actually located in the RealTime method,
+>> instead of using any of the inherited methods. So for all the real time
+>> information you should be using:
+>> rttemp.getMinReward()
+>>
+>> etc.
+>>
+>> If there is anything missing from the realTime.java class please let me
+>> know and I can add it to pull from the inherited methods. As it stands now
+>> you are putting strange stuff into the database for RealTime.. which is fine
+>> because we will need it later, but I know for sure you are pulling the wrong
+>> "indifference point" it needs to be pulled directly from the realtime method
+>> like this..
+>>
+>> rttemp.getTotalPoints()
+>>
+>> and for the max points it would be
+>>
+>> rttemp.getMaxPoints()
+>>
+>> see what I mean?
+>>
+>>
+>> On Tue, Apr 21, 2009 at 11:37 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>
+>>> That may not be the correct place, but it is somewhere in that
+>>> neighborhood according to the error.
+>>>
+>>>
+>>> On Tue, Apr 21, 2009 at 10:09 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>>
+>>>> hmm its been working fine for me, I will try and take a look at it soon.
+>>>>
+>>>>
+>>>> On Tue, Apr 21, 2009 at 7:15 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>>
+>>>>> There is an error in the database.java file under the getSelectedQuery
+>>>>> method... it's trying to parse a string using index of -1... somewhere....
+>>>>>
+>>>>>
+>>>>> On Tue, Apr 21, 2009 at 6:41 PM, Logan Moore <loganjmoore@gmail.com>wrote:
+>>>>>
+>>>>>> Apparently some type of bug, when you log in as administrator and try
+>>>>>> clicking on the Administration tab it will not load?
+>>>>>>
+>>>>>> On Tue, Apr 21, 2009 at 6:09 PM, Tony Teem <evilsax@gmail.com> wrote:
+>>>>>>
+>>>>>>> is the admin menu option not working on purpose? or have I discovered
+>>>>>>> some kind of bug?
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
+>
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Thursday, April 23, 2009 12:14 AM
+To:	Andrew Peil; Jaleesa; Logan Moore; Lori Liles; Tonya Burton
+Subject:	DiSH Stuff
+
+Everyone make sure you send me everything you want included in the project
+turn in. Also now is the time to make any changes you need to to the API and
+analysis document.
+Thanks,
+Tony
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Thursday, April 23, 2009 1:05 PM
+To:	evilsax@gmail.com
+Subject:	my things
+
+Hey Tony,
+Don't worry about turning in my stuff tomorrow...I'll just make a cd and
+turn it in. Thanks anyway though!
+
+-- 
+Jaleesa M. Elston
+From:	Tony Teem [evilsax@gmail.com]
+Sent:	Thursday, April 23, 2009 2:33 PM
+To:	Jaleesa Elston
+Subject:	Re: my things
+
+Uh, I think he wants everything on one CD.
+
+On Thu, Apr 23, 2009 at 1:05 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+
+> Hey Tony,
+> Don't worry about turning in my stuff tomorrow...I'll just make a cd and
+> turn it in. Thanks anyway though!
+>
+> --
+> Jaleesa M. Elston
+>
+
+
+
+-- 
+Tony Teem
+evilsax@gmail.com
+256-962-3046
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Thursday, April 23, 2009 5:52 PM
+To:	Tony Teem
+Subject:	Re: my things
+
+Well whaddya kno...he does! Lol I'll send u mine shortly.
+
+Thanks,
+
+On 4/23/09, Tony Teem <evilsax@gmail.com> wrote:
+> Uh, I think he wants everything on one CD.
+>
+> On Thu, Apr 23, 2009 at 1:05 PM, Jaleesa Elston
+> <jejaggedge@gmail.com>wrote:
+>
+>> Hey Tony,
+>> Don't worry about turning in my stuff tomorrow...I'll just make a cd and
+>> turn it in. Thanks anyway though!
+>>
+>> --
+>> Jaleesa M. Elston
+>>
+>
+>
+>
+> --
+> Tony Teem
+> evilsax@gmail.com
+> 256-962-3046
+>
+
+
+-- 
+Jaleesa M. ElstonFrom:	Tony Teem [evilsax@gmail.com]
+Sent:	Thursday, April 23, 2009 6:20 PM
+To:	Jaleesa Elston
+Subject:	Re: my things
+
+Are you embarassed of us? Why don't you want everything turned in together?
+
+On Thu, Apr 23, 2009 at 5:52 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+
+> Well whaddya kno...he does! Lol I'll send u mine shortly.
+>
+> Thanks,
+>
+> On 4/23/09, Tony Teem <evilsax@gmail.com> wrote:
+> > Uh, I think he wants everything on one CD.
+> >
+> > On Thu, Apr 23, 2009 at 1:05 PM, Jaleesa Elston
+> > <jejaggedge@gmail.com>wrote:
+> >
+> >> Hey Tony,
+> >> Don't worry about turning in my stuff tomorrow...I'll just make a cd and
+> >> turn it in. Thanks anyway though!
+> >>
+> >> --
+> >> Jaleesa M. Elston
+> >>
+> >
+> >
+> >
+> > --
+> > Tony Teem
+> > evilsax@gmail.com
+> > 256-962-3046
+> >
+>
+>
+> --
+> Jaleesa M. Elston
+>
+
+
+
+-- 
+Tony Teem
+evilsax@gmail.com
+256-962-3046
+From:	Jaleesa Elston [jejaggedge@gmail.com]
+Sent:	Thursday, April 23, 2009 6:29 PM
+To:	Tony Teem
+Subject:	Re: my things
+
+oh man heck no!!! I'm very satisfied with what we accomplished... i just
+wanted some extra time to do it...i gotta email  today saying i have to meet
+tomorrow about the CREU research project that i'm doing with Dr. Yang n Dr.
+Trifas, and i have to do some things for that tonight.  I shouldn't have
+waited till the last minute, but thats what I get! lol
+
+On Thu, Apr 23, 2009 at 6:20 PM, Tony Teem <evilsax@gmail.com> wrote:
+
+> Are you embarassed of us? Why don't you want everything turned in together?
+>
+>
+>
+> On Thu, Apr 23, 2009 at 5:52 PM, Jaleesa Elston <jejaggedge@gmail.com>wrote:
+>
+>> Well whaddya kno...he does! Lol I'll send u mine shortly.
+>>
+>> Thanks,
+>>
+>> On 4/23/09, Tony Teem <evilsax@gmail.com> wrote:
+>> > Uh, I think he wants everything on one CD.
+>> >
+>> > On Thu, Apr 23, 2009 at 1:05 PM, Jaleesa Elston
+>> > <jejaggedge@gmail.com>wrote:
+>> >
+>> >> Hey Tony,
+>> >> Don't worry about turning in my stuff tomorrow...I'll just make a cd
+>> and
+>> >> turn it in. Thanks anyway though!
+>> >>
+>> >> --
+>> >> Jaleesa M. Elston
+>> >>
+>> >
+>> >
+>> >
+>> > --
+>> > Tony Teem
+>> > evilsax@gmail.com
+>> > 256-962-3046
+>> >
+>>
+>>
+>> --
+>> Jaleesa M. Elston
+>>
+>
+>
+>
+> --
+>  Tony Teem
+> evilsax@gmail.com
+> 256-962-3046
+>
+
+
+
+-- 
+Jaleesa M. Elston

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<experiment xmlns="http://www.jsu.edu" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.jsu.edu experiment.xsd">
+  <personnel>
+    <investigator>
+      <name> Heidi Dempsey </name>
+      <department> Psychology </department>
+    </investigator>
+    <investigator>
+      <name> David Dempsey </name>
+      <department> Mathematics </department>
+    </investigator>
+    <investigator>
+      <name> Aaron Garrett </name>
+      <department> Computer Science </department>
+    </investigator>
+  </personnel>
+  <title> Discounting in Study Habits Experiment </title>
+  <number> 1 </number>
+  <instructions>
+	All the instructions should go here and will be placed in the interface.
+  </instructions>
+  <methods>
+    <!-- There are 3 different possibilities (right now) for the experiment methods: dl (double limit), da (decreasing adjustment), and mc (multiple choice). -->
+    <!-- Each of these can be placed as many times and in any order that you choose. -->
+    <!-- The time variables (maxTime and responseDelay) have an optional attribute called "units" that can be set to any of the following values: -->
+    <!-- "seconds", "minutes", "hours", "days", "weeks", "months", or "years" -->
+    <!-- The default value is "seconds" if it is left unspecified. -->
+	<da>
+      <rewardType> orange </rewardType>
+	  <precision> 4 </precision>
+      <minReward> 0.5 </minReward>
+      <maxReward> 10 </maxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay> 1 </responseDelay>
+      <numTrials> 3 </numTrials>
+	  <daInstructions> Instructions for Decreasing Adjustment go here! </daInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <doubleDelay> 0 </doubleDelay>
+	  <intertrialInterval> 2 </intertrialInterval>
+	  <question> Would you rather </question>
+    </da>
+    <dl>
+      <rewardType> apples </rewardType>
+      <minReward> 0.5 </minReward>
+      <maxReward> 10 </maxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 0 </responseDelay>
+	  <dlInstructions> Instructions for Double Limit go here! </dlInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <doubleDelay> 0 </doubleDelay>
+	  <intertrialInterval> 3 </intertrialInterval>
+	  <question> Would you rather </question>
+	</dl>
+    <mc>
+      <rewardType> pesos </rewardType>
+      <minReward> 0.5 </minReward>
+      <maxReward> 10 </maxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 1 </responseDelay>
+	  <distribution> Exponential </distribution>
+      <scenario>
+        <option>
+          <reward> 0.01 </reward>
+          <time> 0 </time>
+        </option>
+        <option>
+          <reward> 0.5 </reward>
+          <time units="seconds"> 30 </time>
+        </option>
+        <option>
+          <reward> 1 </reward>
+          <time> 60 </time>
+        </option>
+      </scenario>
+	  <mcInstructions> Intructions for Multiple Choice go here! </mcInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <timeUnits> 0 </timeUnits>
+	  <choiceList> apples </choiceList>
+	  <intertrialInterval> 0 </intertrialInterval>
+	  <question> Would you rather </question>
+    </mc>
+    <mc>
+      <rewardType> ice cream </rewardType>
+      <minReward> 0.5 </minReward>
+      <maxReward> 10 </maxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 2 </responseDelay>
+      <distribution> Logarithmic </distribution>
+      <scenario>
+        <option>
+          <reward> 0.1 </reward>
+          <time> 0 </time>
+        </option>
+        <option>
+          <reward> 0.25 </reward>
+          <time units="seconds"> 10 </time>
+        </option>
+        <option>
+          <reward> 1 </reward>
+          <time> 30 </time>
+        </option>
+      </scenario>
+	  <mcInstructions> Instructions for Multiple Choice go here! </mcInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <timeUnits> 0 </timeUnits>
+	  <choiceList> apples </choiceList>
+	  <intertrialInterval> 0 </intertrialInterval>
+	  <question> Would you rather </question>
+    </mc>
+	<rt>
+	  <fileName> c:\input.txt </fileName>
+	  <showRuler> 1 </showRuler>
+	  <tickMark1> 2 </tickMark1>
+	  <tickMark2> 5 </tickMark2>
+	  <tickMark3> 9 </tickMark3> 
+	  <tickMark4> 22 </tickMark4>
+	  <tickMark5> 24 </tickMark5>
+	  <tickMark6> 28 </tickMark6> 
+	  <tickMark7> 32 </tickMark7> 
+	  <tickMark8> 39 </tickMark8> 
+	  <tickMark9> 44 </tickMark9> 
+	  <tickMark10> 55 </tickMark10> 
+      <rewardType> pesos </rewardType>
+      <minReward> 0.5 </minReward>
+      <maxReward> 10 </maxReward>
+      <maxTime units="minutes"> 2 </maxTime>
+      <responseDelay units="seconds"> 1 </responseDelay>
+	  <distribution> Exponential </distribution>
+      <scenario>
+        <option>
+          <reward> 0.01 </reward>
+          <time> 0 </time>
+        </option>
+        <option>
+          <reward> 0.5 </reward>
+          <time units="seconds"> 30 </time>
+        </option>
+        <option>
+          <reward> 1 </reward>
+          <time> 60 </time>
+        </option>
+      </scenario>
+	  <rtInstructions> Intructions for Real Time go here! </rtInstructions>
+	  <soonerTime> 0 </soonerTime>
+	  <laterTime> 0 </laterTime>
+	  <timeUnits> 0 </timeUnits>
+	  <choiceList> apples </choiceList>
+	  <intertrialInterval> 0 </intertrialInterval>
+	  <question> Would you rather have </question>
+	  <maxReadingTime units="minutes"> 5 </maxReadingTime>
+    </rt>
+  </methods>
+  <conclusion>
+	Final concluding remarks will go here and will be displayed at the end of the experiment.
+  </conclusion>
+</experiment>

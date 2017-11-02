@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/282/trunk/DiSH
+END
+createdbsql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/268/trunk/DiSH/createdbsql.txt
+END
+dbconfig.ini
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/279/trunk/DiSH/dbconfig.ini
+END
+experiment.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/262/trunk/DiSH/experiment.xsd
+END
+input.txt
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/247/trunk/DiSH/input.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/279/trunk/DiSH/build.xml
+END
